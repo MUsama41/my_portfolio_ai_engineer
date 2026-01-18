@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#hero" class="logo">MUhammad USAMA</a>
+            <a href="#hero" class="logo">Muhammad USAMA</a>
             <ul>
                 <li><a href="#hero">Modernize</a></li>
                 <li><a href="#expertise">Expertise</a></li>
@@ -50,7 +50,7 @@
                                 alt="Muhammad Usama">
                         </div>
                         <div class="exp-badge">
-                            <span>50+</span>
+                            <span>10+</span>
                             <p>Global Projects</p>
                         </div>
                     </div>
@@ -120,11 +120,8 @@
 
             <div class="projects-grid">
                 <article class="glass project-card">
-                    <div class="project-visual" onclick="playVideo(this)">
-                        <div class="thumbnail-overlay" style="background-image: url('project1_thumb.png');">
-                            <div class="play-button"><i class="fas fa-play"></i></div>
-                        </div>
-                        <iframe src="https://drive.google.com/file/d/1Pez20yga6nZYueKdrFnj08eTLRoWZ1Zy/preview"
+                    <div class="project-visual">
+                        <iframe src="https://drive.google.com/file/d/1QF40kfQ1xHrv_FOOkh5srhyhKWof3Tpe/preview"
                             allowfullscreen></iframe>
                     </div>
                     <div class="project-content">
@@ -136,11 +133,8 @@
                 </article>
 
                 <article class="glass project-card">
-                    <div class="project-visual" onclick="playVideo(this)">
-                        <div class="thumbnail-overlay" style="background-image: url('project2_thumb.png');">
-                            <div class="play-button"><i class="fas fa-play"></i></div>
-                        </div>
-                        <iframe src="https://drive.google.com/file/d/1eQy32FHd7XOcpyHQkJNpx2c4TE5Q45Lh/preview"
+                    <div class="project-visual">
+                        <iframe src="https://drive.google.com/file/d/1u28UXJVW9xHNvjIqMWFxYM2uHCBf-Csq/preview"
                             allowfullscreen></iframe>
                     </div>
                     <div class="project-content">
@@ -152,11 +146,8 @@
                 </article>
 
                 <article class="glass project-card">
-                    <div class="project-visual" onclick="playVideo(this)">
-                        <div class="thumbnail-overlay" style="background-image: url('project3_thumb.png');">
-                            <div class="play-button"><i class="fas fa-play"></i></div>
-                        </div>
-                        <iframe src="https://drive.google.com/file/d/18Zmu41Ggo5DNR6e3zkyyqg5WaHHe_K8n/preview"
+                    <div class="project-visual">
+                        <iframe src="https://drive.google.com/file/d/1Kiv1XzmEjToujlkBhtPp8-6b_qGf42uK/preview"
                             allowfullscreen></iframe>
                     </div>
                     <div class="project-content">
@@ -169,11 +160,8 @@
                 </article>
 
                 <article class="glass project-card">
-                    <div class="project-visual" onclick="playVideo(this)">
-                        <div class="thumbnail-overlay" style="background-image: url('project4_thumb.png');">
-                            <div class="play-button"><i class="fas fa-play"></i></div>
-                        </div>
-                        <iframe src="https://drive.google.com/file/d/13ozLIVvdN1twBq174ET0EKStPY3ozsw8/preview"
+                    <div class="project-visual">
+                        <iframe src="https://drive.google.com/file/d/1YGlfxAEdtYd_Og-o62Pyd6vNLFwGhQ0L/preview"
                             allowfullscreen></iframe>
                     </div>
                     <div class="project-content">
@@ -187,21 +175,6 @@
             </div>
         </div>
     </section>
-
-    <script>
-        function playVideo(container) {
-            if (container.classList.contains('playing')) return;
-
-            container.classList.add('playing');
-            const iframe = container.querySelector('iframe');
-            const src = iframe.getAttribute('src');
-
-            if (src && src.length > 5) { // Ensure there's a valid link
-                const separator = src.includes('?') ? '&' : '?';
-                iframe.setAttribute('src', src + separator + 'autoplay=1');
-            }
-        }
-    </script>
 
     <!-- Testimonials -->
     <section id="reviews">
