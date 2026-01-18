@@ -178,7 +178,7 @@
                     </div>
                     <div class="project-content">
                         <span class="section-tag">Computer Vision</span>
-                        <h3>Mask R-CNN Diagram Analysis</h3>
+                        <h3>Mask R-CNN Architectural Diagram Analysis</h3>
                         <p>Fine-tuned segmentation models for real estate architectural diagrams, automating
                             polygon extraction for fences/gardens and generating annotated planning PDFs with
                             95%+ precision.</p>
@@ -190,10 +190,16 @@
 
     <script>
         function playVideo(container) {
-            const thumbnail = container.querySelector('.thumbnail-overlay');
+            if (container.classList.contains('playing')) return;
+
+            container.classList.add('playing');
             const iframe = container.querySelector('iframe');
-            thumbnail.style.display = 'none';
-            iframe.style.display = 'block';
+            const src = iframe.getAttribute('src');
+
+            if (src && src.length > 5) { // Ensure there's a valid link
+                const separator = src.includes('?') ? '&' : '?';
+                iframe.setAttribute('src', src + separator + 'autoplay=1');
+            }
         }
     </script>
 
