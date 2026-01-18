@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#hero" class="logo">M.USAMA</a>
+            <a href="#hero" class="logo">MUhammad USAMA</a>
             <ul>
                 <li><a href="#hero">Modernize</a></li>
                 <li><a href="#expertise">Expertise</a></li>
@@ -120,8 +120,11 @@
 
             <div class="projects-grid">
                 <article class="glass project-card">
-                    <div class="project-visual">
-                        <iframe src="https://drive.google.com/file/d/1vJtZlqfhe7BoI6oKnjXhopsO1kHMpEfQ/preview"
+                    <div class="project-visual" onclick="playVideo(this)">
+                        <div class="thumbnail-overlay" style="background-image: url('project1_thumb.png');">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <iframe src="https://drive.google.com/file/d/1Pez20yga6nZYueKdrFnj08eTLRoWZ1Zy/preview"
                             allowfullscreen></iframe>
                     </div>
                     <div class="project-content">
@@ -133,8 +136,11 @@
                 </article>
 
                 <article class="glass project-card">
-                    <div class="project-visual">
-                        <iframe src="https://drive.google.com/file/d/17IZ4IHqScoAl2pUysmLQCRna1ZSun85W/preview"
+                    <div class="project-visual" onclick="playVideo(this)">
+                        <div class="thumbnail-overlay" style="background-image: url('project2_thumb.png');">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <iframe src="https://drive.google.com/file/d/1eQy32FHd7XOcpyHQkJNpx2c4TE5Q45Lh/preview"
                             allowfullscreen></iframe>
                     </div>
                     <div class="project-content">
@@ -144,9 +150,52 @@
                             motion synthesis for high-fidelity digital humans.</p>
                     </div>
                 </article>
+
+                <article class="glass project-card">
+                    <div class="project-visual" onclick="playVideo(this)">
+                        <div class="thumbnail-overlay" style="background-image: url('project3_thumb.png');">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <iframe src="https://drive.google.com/file/d/18Zmu41Ggo5DNR6e3zkyyqg5WaHHe_K8n/preview"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="project-content">
+                        <span class="section-tag">AI/ML Implementation</span>
+                        <h3>Interview Intelligence System</h3>
+                        <p>Automated the core recruitment submodule for a large-scale firm, delivering high-speed
+                            interview feedback and data-driven hiring optimization through intelligent NLP
+                            pipelines.</p>
+                    </div>
+                </article>
+
+                <article class="glass project-card">
+                    <div class="project-visual" onclick="playVideo(this)">
+                        <div class="thumbnail-overlay" style="background-image: url('project4_thumb.png');">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <iframe src="https://drive.google.com/file/d/13ozLIVvdN1twBq174ET0EKStPY3ozsw8/preview"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="project-content">
+                        <span class="section-tag">Computer Vision</span>
+                        <h3>Mask R-CNN Diagram Analysis</h3>
+                        <p>Fine-tuned segmentation models for real estate architectural diagrams, automating
+                            polygon extraction for fences/gardens and generating annotated planning PDFs with
+                            95%+ precision.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
+
+    <script>
+        function playVideo(container) {
+            const thumbnail = container.querySelector('.thumbnail-overlay');
+            const iframe = container.querySelector('iframe');
+            thumbnail.style.display = 'none';
+            iframe.style.display = 'block';
+        }
+    </script>
 
     <!-- Testimonials -->
     <section id="reviews">
@@ -176,7 +225,7 @@
                     <div class="reviewer">
                         <div class="reviewer-info">
                             <h4>Rasha</h4>
-                            <span>FinTech Founder</span>
+                            <span>PhD professor (KFUPM)</span>
                         </div>
                     </div>
                 </div>
@@ -210,7 +259,7 @@
                             <div class="link-icon"><i class="fab fa-github"></i></div>
                             <div>
                                 <p style="font-size: 0.8rem; color: var(--text-muted);">GitHub</p>
-                                <strong>Open Source Contributions</strong>
+                                <strong>GitHub Profile</strong>
                             </div>
                         </a>
                     </div>
