@@ -292,39 +292,42 @@ nav a:hover::after {
     object-fit: cover;
 }
 
-.exp-badge {
+.floating-badge {
     position: absolute;
-    bottom: -10px;
-    right: -20px;
     background: white;
-    padding: 1.2rem 1.8rem;
-    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    border-radius: 18px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border);
+    z-index: 10;
     display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.exp-badge .badge-item {
-    text-align: left;
+.badge-left {
+    top: 20px;
+    left: -30px;
 }
 
-.exp-badge .badge-item span {
-    display: inline;
+.badge-right {
+    bottom: 20px;
+    right: -30px;
+}
+
+.floating-badge span {
     font-weight: 800;
     font-size: 1.4rem;
     color: var(--primary);
-    margin-right: 0.4rem;
 }
 
-.exp-badge .badge-item p {
-    display: inline;
-    font-size: 0.85rem;
+.floating-badge p {
+    font-size: 0.75rem;
     color: var(--text-muted);
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    line-height: 1.2;
 }
 
 /* Sections Global */
