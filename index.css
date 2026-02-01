@@ -41,10 +41,10 @@ html {
 }
 
 body {
-    background-color: var(--bg-main);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: var(--text-main);
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
+    background: var(--background);
+    line-height: 1.7;
     overflow-x: hidden;
     /* Subtle background pattern */
     background-image: radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.03) 0px, transparent 50%),
@@ -203,8 +203,8 @@ nav a:hover::after {
 }
 
 .hero h1 {
-    font-size: 4.8rem;
-    line-height: 1.05;
+    font-size: 4rem;
+    line-height: 1.1;
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
@@ -214,9 +214,9 @@ nav a:hover::after {
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--text-muted);
-    max-width: 600px;
+    max-width: 580px;
     margin-bottom: 2.5rem;
 }
 
@@ -261,16 +261,29 @@ nav a:hover::after {
 .profile-container {
     position: relative;
     padding: 20px;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 .profile-pic-wrapper {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 40px;
     overflow: hidden;
     position: relative;
-    box-shadow: var(--shadow-lg);
-    border: 8px solid white;
+    box-shadow: var(--shadow-xl);
+    border: 6px solid white;
 }
 
 .profile-pic-wrapper img {
@@ -281,26 +294,37 @@ nav a:hover::after {
 
 .exp-badge {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -10px;
+    right: -20px;
     background: white;
-    padding: 1.5rem;
-    border-radius: 24px;
-    box-shadow: var(--shadow-lg);
-    text-align: center;
+    padding: 1.2rem 1.8rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
-.exp-badge span {
-    display: block;
+.exp-badge .badge-item {
+    text-align: left;
+}
+
+.exp-badge .badge-item span {
+    display: inline;
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: var(--primary);
+    margin-right: 0.4rem;
 }
 
-.exp-badge p {
-    font-size: 0.75rem;
-    font-weight: 600;
+.exp-badge .badge-item p {
+    display: inline;
+    font-size: 0.85rem;
     color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 /* Sections Global */
@@ -314,7 +338,7 @@ section {
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     margin-top: 0.5rem;
 }
