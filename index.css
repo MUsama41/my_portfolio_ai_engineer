@@ -139,6 +139,39 @@ nav a:hover::after {
     width: 100%;
 }
 
+.btn-resume {
+    background: rgba(37, 99, 235, 0.05);
+    color: var(--primary) !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 12px;
+    border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.btn-resume:hover {
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.btn-resume::after {
+    display: none;
+}
+
+.btn-nav {
+    background: var(--primary);
+    color: white !important;
+    padding: 0.6rem 1.2rem !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-nav:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-nav::after {
+    display: none;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -190,6 +223,7 @@ nav a:hover::after {
 .cta-group {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .btn {
