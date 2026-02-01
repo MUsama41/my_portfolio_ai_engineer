@@ -121,10 +121,10 @@
             <div class="projects-grid">
                 <!-- Project 1: Mask R-CNN -->
                 <article class="glass project-card">
-                    <div class="project-visual">
+                    <div class="project-visual visual-contained">
                         <img src="https://drive.google.com/uc?export=view&id=13r3e-l4wi5tRizcJRGdRMwfFAxDk5Twy"
                             onerror="this.src='https://lh3.googleusercontent.com/d/13r3e-l4wi5tRizcJRGdRMwfFAxDk5Twy'"
-                            alt="Mask R-CNN Preview" style="width: 100%; height: 100%; object-fit: cover;">
+                            alt="Mask R-CNN Preview">
                     </div>
                     <div class="project-content">
                         <div class="project-header">
@@ -137,10 +137,14 @@
                             </div>
                         </div>
                         <h3>Mask R-CNN Architectural Diagram Analysis</h3>
-                        <p>Fine-tuned segmentation model Mask R-CNN for real estate architectural diagrams, automating
-                            polygon extraction for fences/gardens, rockberms and 4 more object types and generating
-                            annotated planning PDFs with
-                            95%+ precision.</p>
+                        <div class="project-description">
+                            <p class="line-clamp">Fine-tuned segmentation model Mask R-CNN for real estate architectural
+                                diagrams, automating
+                                polygon extraction for fences/gardens, rockberms and 4 more object types and generating
+                                annotated planning PDFs with
+                                95%+ precision.</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
                     </div>
                 </article>
 
@@ -159,19 +163,23 @@
                             </div>
                         </div>
                         <h3>WAN 2.2 Avatar System</h3>
-                        <p>Advanced video generation pipeline fine-tuned on a custom video dataset using WAN 2.2,
-                            achieving ultra-realistic lip-syncing and full body motion synthesis comparable to
-                            state-of-the-art
-                            platforms like HeyGen.</p>
+                        <div class="project-description">
+                            <p class="line-clamp">Advanced video generation pipeline fine-tuned on a custom video
+                                dataset using WAN 2.2,
+                                achieving ultra-realistic lip-syncing and full body motion synthesis comparable to
+                                state-of-the-art
+                                platforms like HeyGen.</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
                     </div>
                 </article>
 
                 <!-- Project 3: AreaHub (New) -->
                 <article class="glass project-card">
-                    <div class="project-visual">
+                    <div class="project-visual visual-contained">
                         <img src="https://drive.google.com/uc?export=view&id=154hrZ8alfB-O-vHcwBEPvp9aq2VryOAo"
                             onerror="this.src='https://lh3.googleusercontent.com/d/154hrZ8alfB-O-vHcwBEPvp9aq2VryOAo'"
-                            alt="AreaHub Project Preview" style="width: 100%; height: 100%; object-fit: cover;">
+                            alt="AreaHub Project Preview">
                     </div>
                     <div class="project-content">
                         <div class="project-header">
@@ -182,10 +190,15 @@
                             </div>
                         </div>
                         <h3>Property Search Intelligence & Generative AI Lead</h3>
-                        <p>Led AreaHub’s property search intelligence and generative AI systems, building a multi-agent,
-                            Lambda-based chatbot that converts buyer intent into optimized property queries and
-                            personalized recommendations. Also developed a fully automated AI video generation pipeline
-                            for sellers.</p>
+                        <div class="project-description">
+                            <p class="line-clamp">Led AreaHub’s property search intelligence and generative AI systems,
+                                building a multi-agent,
+                                Lambda-based chatbot that converts buyer intent into optimized property queries and
+                                personalized recommendations. Also developed a fully automated AI video generation
+                                pipeline
+                                for sellers.</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
                     </div>
                 </article>
 
@@ -205,9 +218,13 @@
                             </div>
                         </div>
                         <h3>Interview Intelligence System</h3>
-                        <p>Automated the core recruitment in-house System for a large-scale firm, delivering high-speed
-                            interview feedback and data-driven hiring optimization through intelligent NLP
-                            pipelines.</p>
+                        <div class="project-description">
+                            <p class="line-clamp">Automated the core recruitment in-house System for a large-scale firm,
+                                delivering high-speed
+                                interview feedback and data-driven hiring optimization through intelligent NLP
+                                pipelines.</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
                     </div>
                 </article>
 
@@ -227,8 +244,12 @@
                             </div>
                         </div>
                         <h3>Multi Agents Modeling</h3>
-                        <p>A conversational ecosystem deployed on AWS EC2, utilizing LangGraph for complex
-                            multi-step reasoning and business logic automation.</p>
+                        <div class="project-description">
+                            <p class="line-clamp">A conversational ecosystem deployed on AWS EC2, utilizing LangGraph
+                                for complex
+                                multi-step reasoning and business logic automation.</p>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -319,6 +340,18 @@
         <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 Muhammad Usama | AI Solution Architect.
             Engineered for Excellence.</p>
     </footer>
+    <script>
+        function toggleReadMore(btn) {
+            const description = btn.previousElementSibling;
+            if (description.classList.contains('line-clamp')) {
+                description.classList.remove('line-clamp');
+                btn.textContent = 'Read Less';
+            } else {
+                description.classList.add('line-clamp');
+                btn.textContent = 'Read More';
+            }
+        }
+    </script>
 </body>
 
 </html>
