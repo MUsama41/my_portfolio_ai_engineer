@@ -295,39 +295,46 @@ nav a:hover::after {
 .floating-badge {
     position: absolute;
     background: white;
-    padding: 1rem 1.5rem;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--border);
-    z-index: 10;
+    padding: 0.8rem 1.2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 20;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+}
+
+.floating-badge:hover {
+    transform: scale(1.1);
 }
 
 .badge-left {
-    top: 20px;
-    left: -30px;
+    top: 5px;
+    left: 5px;
 }
 
 .badge-right {
-    bottom: 20px;
-    right: -30px;
+    bottom: 5px;
+    right: 5px;
 }
 
 .floating-badge span {
-    font-weight: 800;
-    font-size: 1.4rem;
+    font-weight: 850;
+    font-size: 1.2rem;
     color: var(--primary);
+    line-height: 1;
 }
 
 .floating-badge p {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: var(--text-muted);
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-top: 3px;
+    line-height: 1;
 }
 
 /* Sections Global */
