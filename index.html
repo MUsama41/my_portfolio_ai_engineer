@@ -4,30 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary SEO Meta Tags -->
     <title>Muhammad Usama | Lead AI Systems Architect - Production-Grade AI & GPU Infrastructure Expert</title>
-    <meta name="title" content="Muhammad Usama | Lead AI Systems Architect - Production-Grade AI & GPU Infrastructure Expert">
-    <meta name="description" content="Muhammad Usama is a Lead AI Systems Architect with 5+ years of experience specializing in Production-Grade AI, GPU-based Infrastructure, LLMs, Computer Vision, and Nvidia AI Stack. Available for senior AI/ML roles and technical collaborations.">
-    <meta name="keywords" content="AI Systems Architect, Machine Learning Engineer, LLM Expert, Computer Vision, GPU Infrastructure, MLOps, Nvidia AI Stack, RAG Systems, Agentic AI, Muhammad Usama">
+    <meta name="title"
+        content="Muhammad Usama | Lead AI Systems Architect - Production-Grade AI & GPU Infrastructure Expert">
+    <meta name="description"
+        content="Muhammad Usama is a Lead AI Systems Architect with 5+ years of experience specializing in Production-Grade AI, GPU-based Infrastructure, LLMs, Computer Vision, and Nvidia AI Stack. Available for senior AI/ML roles and technical collaborations.">
+    <meta name="keywords"
+        content="AI Systems Architect, Machine Learning Engineer, LLM Expert, Computer Vision, GPU Infrastructure, MLOps, Nvidia AI Stack, RAG Systems, Agentic AI, Muhammad Usama">
     <meta name="author" content="Muhammad Usama">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://muhammadusama.dev/">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://muhammadusama.dev/">
     <meta property="og:title" content="Muhammad Usama | Lead AI Systems Architect">
-    <meta property="og:description" content="Specialist in Production-Grade AI, GPU Infrastructure, LLMs, and Computer Vision. 5+ years delivering enterprise AI solutions.">
+    <meta property="og:description"
+        content="Specialist in Production-Grade AI, GPU Infrastructure, LLMs, and Computer Vision. 5+ years delivering enterprise AI solutions.">
     <meta property="og:image" content="https://lh3.googleusercontent.com/d/1FJCgOoFXBP4vzQkAvZt3PnBFwv9ab1zA">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://muhammadusama.dev/">
     <meta property="twitter:title" content="Muhammad Usama | Lead AI Systems Architect">
-    <meta property="twitter:description" content="Specialist in Production-Grade AI, GPU Infrastructure, LLMs, and Computer Vision.">
+    <meta property="twitter:description"
+        content="Specialist in Production-Grade AI, GPU Infrastructure, LLMs, and Computer Vision.">
     <meta property="twitter:image" content="https://lh3.googleusercontent.com/d/1FJCgOoFXBP4vzQkAvZt3PnBFwv9ab1zA">
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -55,23 +60,23 @@
             --bg-secondary: #111118;
             --bg-card: #16161d;
             --bg-card-hover: #1c1c25;
-            
+
             /* Accent Colors - Refined Teal/Cyan */
             --accent-primary: #00d4aa;
             --accent-secondary: #00a8ff;
             --accent-glow: rgba(0, 212, 170, 0.15);
             --accent-gradient: linear-gradient(135deg, #00d4aa 0%, #00a8ff 100%);
-            
+
             /* Text Colors */
             --text-primary: #ffffff;
             --text-secondary: rgba(255, 255, 255, 0.7);
             --text-muted: rgba(255, 255, 255, 0.45);
-            
+
             /* Borders */
             --border-subtle: rgba(255, 255, 255, 0.06);
             --border-medium: rgba(255, 255, 255, 0.1);
             --border-accent: rgba(0, 212, 170, 0.3);
-            
+
             /* System */
             --nav-height: 72px;
             --radius-xl: 24px;
@@ -100,7 +105,10 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Space Grotesk', sans-serif;
             letter-spacing: -0.03em;
             text-wrap: balance;
@@ -136,9 +144,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
-                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
             background-size: 60px 60px;
             pointer-events: none;
             z-index: 0;
@@ -146,8 +154,13 @@
         }
 
         @keyframes gridMove {
-            0% { background-position: 0 0; }
-            100% { background-position: 60px 60px; }
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 60px 60px;
+            }
         }
 
         /* Gradient Orbs */
@@ -188,9 +201,19 @@
         }
 
         @keyframes orbFloat {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(30px, -30px) scale(1.05); }
-            66% { transform: translate(-20px, 20px) scale(0.95); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -30px) scale(1.05);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.95);
+            }
         }
 
         /* Navigation */
@@ -229,6 +252,7 @@
             align-items: center;
             gap: 0.75rem;
             transition: var(--transition);
+            z-index: 1100;
         }
 
         .logo:hover {
@@ -257,14 +281,19 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transform: rotate(45deg);
             animation: logoShine 3s ease-in-out infinite;
         }
 
         @keyframes logoShine {
-            0%, 100% { transform: translateX(-100%) rotate(45deg); }
-            50% { transform: translateX(100%) rotate(45deg); }
+            0%, 100% {
+                transform: translateX(-100%) rotate(45deg);
+            }
+
+            50% {
+                transform: translateX(100%) rotate(45deg);
+            }
         }
 
         nav ul {
@@ -278,6 +307,61 @@
             nav ul {
                 display: flex;
             }
+        }
+
+        /* Mobile Nav Overlay */
+        .mobile-nav {
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 10, 15, 0.98);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+
+        .mobile-nav.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .mobile-nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+            width: 100%;
+        }
+
+        .mobile-nav a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-family: 'Space Grotesk', sans-serif;
+            transition: var(--transition-fast);
+        }
+
+        .mobile-nav a:hover {
+            color: var(--accent-primary);
+            transform: scale(1.1);
+        }
+
+        .mobile-nav .btn-nav {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: var(--radius-sm);
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+            font-weight: 700;
         }
 
         nav a {
@@ -330,7 +414,7 @@
             left: 50%;
             width: 0;
             height: 0;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             border-radius: 50%;
             transform: translate(-50%, -50%);
             transition: width 0.6s, height 0.6s;
@@ -388,8 +472,15 @@
         }
 
         @keyframes badgePulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(0, 212, 170, 0.4); }
-            50% { box-shadow: 0 0 20px 5px rgba(0, 212, 170, 0.1); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 212, 170, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 20px 5px rgba(0, 212, 170, 0.1);
+            }
         }
 
         .status-dot {
@@ -401,15 +492,45 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.8); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(0.8);
+            }
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 5.5vw, 4rem);
-            line-height: 1.05;
+            font-size: clamp(2.2rem, 8vw, 4rem);
+            line-height: 1.1;
             font-weight: 700;
-            margin-bottom: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 1023px) {
+            .hero {
+                text-align: center;
+                padding-top: calc(var(--nav-height) + 2rem);
+            }
+
+            .hero .lead {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero .cta-group {
+                justify-content: center;
+            }
+
+            .stats-row {
+                justify-content: center;
+                gap: 2rem;
+            }
         }
 
         /* Text Reveal Animation */
@@ -425,7 +546,9 @@
         }
 
         @keyframes textReveal {
-            to { transform: translateY(0); }
+            to {
+                transform: translateY(0);
+            }
         }
 
         .gradient-text {
@@ -445,13 +568,25 @@
         }
 
         @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
         }
 
         @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: var(--accent-primary) }
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: var(--accent-primary)
+            }
         }
 
         .hero .lead {
@@ -469,6 +604,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -494,9 +630,17 @@
             animation: fadeInUp 0.6s ease forwards;
         }
 
-        .stat-item:nth-child(1) { animation-delay: 0.7s; }
-        .stat-item:nth-child(2) { animation-delay: 0.9s; }
-        .stat-item:nth-child(3) { animation-delay: 1.1s; }
+        .stat-item:nth-child(1) {
+            animation-delay: 0.7s;
+        }
+
+        .stat-item:nth-child(2) {
+            animation-delay: 0.9s;
+        }
+
+        .stat-item:nth-child(3) {
+            animation-delay: 1.1s;
+        }
 
         .stat-number {
             font-family: 'Space Grotesk', sans-serif;
@@ -555,7 +699,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transition: var(--transition);
         }
 
@@ -604,7 +748,7 @@
 
         .profile-card {
             position: relative;
-            background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
             backdrop-filter: blur(10px);
             border: 1px solid var(--border-medium);
             border-radius: var(--radius-xl);
@@ -619,9 +763,19 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0) rotateX(0) rotateY(0); }
-            25% { transform: translateY(-10px) rotateX(2deg) rotateY(-2deg); }
-            75% { transform: translateY(-5px) rotateX(-2deg) rotateY(2deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotateX(0) rotateY(0);
+            }
+
+            25% {
+                transform: translateY(-10px) rotateX(2deg) rotateY(-2deg);
+            }
+
+            75% {
+                transform: translateY(-5px) rotateX(-2deg) rotateY(2deg);
+            }
         }
 
         .profile-image {
@@ -676,8 +830,15 @@
         }
 
         @keyframes glowPulse {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 0.6; }
+
+            0%,
+            100% {
+                opacity: 0.3;
+            }
+
+            50% {
+                opacity: 0.6;
+            }
         }
 
         /* Floating Stats */
@@ -704,19 +865,49 @@
 
         .floating-stat.top-left {
             top: -15px;
-            left: -25px;
+            left: -15px;
             animation: floatBadge 4s ease-in-out infinite;
         }
 
         .floating-stat.bottom-right {
             bottom: -15px;
-            right: -25px;
+            right: -15px;
             animation: floatBadge 4s ease-in-out infinite 2s;
         }
 
+        @media (max-width: 767px) {
+            .floating-stat {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.75rem;
+            }
+
+            .stat-icon {
+                width: 30px;
+                height: 30px;
+                font-size: 0.8rem;
+            }
+
+            .floating-stat.top-left {
+                left: -5px;
+                top: -10px;
+            }
+
+            .floating-stat.bottom-right {
+                right: -5px;
+                bottom: -10px;
+            }
+        }
+
         @keyframes floatBadge {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
         }
 
         .stat-icon {
@@ -735,6 +926,43 @@
         .floating-stat:hover .stat-icon {
             background: var(--accent-gradient);
             color: var(--bg-primary);
+        }
+
+        /* Mobile Carousel Styles */
+        @media (max-width: 1023px) {
+
+            .expertise-grid,
+            .projects-grid,
+            .reviews-grid {
+                display: flex !important;
+                overflow-x: auto !important;
+                scroll-snap-type: x mandatory !important;
+                padding: 1.5rem 1.5rem 3rem !important;
+                margin-left: -1.5rem !important;
+                margin-right: -1.5rem !important;
+                gap: 1.25rem !important;
+                scrollbar-width: none !important;
+                -ms-overflow-style: none !important;
+            }
+
+            .expertise-grid::-webkit-scrollbar,
+            .projects-grid::-webkit-scrollbar,
+            .reviews-grid::-webkit-scrollbar {
+                display: none !important;
+            }
+
+            .expertise-card,
+            .project-card,
+            .review-card {
+                flex: 0 0 85vw !important;
+                scroll-snap-align: center !important;
+                max-width: 360px !important;
+                height: auto !important;
+            }
+
+            .section-header {
+                padding: 0 0.5rem;
+            }
         }
 
         /* Sections */
@@ -782,8 +1010,13 @@
         }
 
         @keyframes shimmer {
-            0% { left: -100%; }
-            100% { left: 100%; }
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 100%;
+            }
         }
 
         .section-title {
@@ -1357,11 +1590,16 @@
         }
 
         @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
-        .cta-card > * {
+        .cta-card>* {
             position: relative;
             z-index: 1;
         }
@@ -1489,6 +1727,7 @@
             border: none;
             cursor: pointer;
             padding: 0.5rem;
+            z-index: 1100;
         }
 
         .mobile-menu-btn span {
@@ -1496,20 +1735,35 @@
             height: 2px;
             background: var(--text-primary);
             transition: var(--transition-fast);
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
         }
 
         @media (min-width: 1024px) {
             .mobile-menu-btn {
                 display: none;
             }
-            
+
             .cursor-dot {
                 display: block;
             }
         }
 
         @media (max-width: 1023px) {
-            .cursor-dot, .cursor-glow {
+
+            .cursor-dot,
+            .cursor-glow {
                 display: none;
             }
         }
@@ -1527,7 +1781,7 @@
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
         }
     </style>
-    
+
     <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1eyG84LmZde772IR_3tdJ102LbAtay4mn?v=1">
     <link rel="shortcut icon" href="https://lh3.googleusercontent.com/d/1eyG84LmZde772IR_3tdJ102LbAtay4mn?v=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -1545,6 +1799,18 @@
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="noise-overlay"></div>
 
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reviews">Testimonials</a></li>
+            <li><a href="https://docs.google.com/document/d/1NCOGOVpzQJ-55vmPTp5HH1RWTg4V_4VL/export?format=pdf" target="_blank">Resume</a></li>
+            <li><a href="#contact" class="btn btn-primary magnetic">Get In Touch</a></li>
+        </ul>
+    </div>
+
     <!-- Navigation -->
     <nav id="mainNav">
         <div class="container">
@@ -1557,7 +1823,9 @@
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#reviews">Testimonials</a></li>
-                <li><a href="https://docs.google.com/document/d/1NCOGOVpzQJ-55vmPTp5HH1RWTg4V_4VL/export?format=pdf">Resume</a></li>
+                <li><a
+                        href="https://docs.google.com/document/d/1NCOGOVpzQJ-55vmPTp5HH1RWTg4V_4VL/export?format=pdf">Resume</a>
+                </li>
                 <li><a href="#contact" class="btn-nav magnetic">Get In Touch</a></li>
             </ul>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -1578,12 +1846,16 @@
                         Available for Opportunities
                     </div>
                     <h1>
-                        <span class="text-reveal"><span>Engineering</span></span> 
-                        <span class="gradient-text text-reveal" style="animation-delay: 0.2s"><span>Scalable AI</span></span><br>
-                        <span class="text-reveal" style="animation-delay: 0.4s"><span>for Enterprise Performance</span></span>
+                        <span class="text-reveal"><span>Engineering</span></span>
+                        <span class="gradient-text text-reveal" style="animation-delay: 0.2s"><span>Scalable
+                                AI</span></span><br>
+                        <span class="text-reveal" style="animation-delay: 0.4s"><span>for Enterprise
+                                Performance</span></span>
                     </h1>
                     <p class="lead">
-                        I am Muhammad Usama, specializing in <strong>Production-Grade AI</strong> on <strong>GPU-based Infrastructure</strong>. I architect high-performance LLM systems, agentic workflows, and computer vision solutions that transform complex business challenges into measurable outcomes.
+                        I am Muhammad Usama, specializing in <strong>Production-Grade AI</strong> on <strong>GPU-based
+                            Infrastructure</strong>. I architect high-performance LLM systems, agentic workflows, and
+                        computer vision solutions that transform complex business challenges into measurable outcomes.
                     </p>
                     <div class="stats-row">
                         <div class="stat-item">
@@ -1603,10 +1875,12 @@
                         <a href="#contact" class="btn btn-primary magnetic">
                             <i class="fas fa-paper-plane"></i> Hire Me
                         </a>
-                        <a href="https://docs.google.com/document/d/1NCOGOVpzQJ-55vmPTp5HH1RWTg4V_4VL/export?format=pdf" class="btn btn-secondary magnetic">
+                        <a href="https://docs.google.com/document/d/1NCOGOVpzQJ-55vmPTp5HH1RWTg4V_4VL/export?format=pdf"
+                            class="btn btn-secondary magnetic">
                             <i class="fas fa-download"></i> Download CV
                         </a>
-                        <a href="https://linkedin.com/in/muhammad-usama41/" target="_blank" class="btn btn-secondary magnetic">
+                        <a href="https://linkedin.com/in/muhammad-usama41/" target="_blank"
+                            class="btn btn-secondary magnetic">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
                     </div>
@@ -1651,10 +1925,13 @@
                     <div class="expertise-icon"><i class="fas fa-brain"></i></div>
                     <h3>LLMs in Production</h3>
                     <ul class="expertise-list">
-                        <li><i class="fas fa-circle"></i> Enterprise-Grade LLM Architectures (OpenAI, Gemini, Claude, open-source)</li>
-                        <li><i class="fas fa-circle"></i> Agentic and Multi-Agent Systems (LangGraph, tool-calling, orchestration)</li>
+                        <li><i class="fas fa-circle"></i> Enterprise-Grade LLM Architectures (OpenAI, Gemini, Claude,
+                            open-source)</li>
+                        <li><i class="fas fa-circle"></i> Agentic and Multi-Agent Systems (LangGraph, tool-calling,
+                            orchestration)</li>
                         <li><i class="fas fa-circle"></i> LLM Fine-Tuning and Adaptation (LoRA, QLoRA, PEFT)</li>
-                        <li><i class="fas fa-circle"></i> RAG Systems with hybrid search, reranking, eval-driven optimization</li>
+                        <li><i class="fas fa-circle"></i> RAG Systems with hybrid search, reranking, eval-driven
+                            optimization</li>
                         <li><i class="fas fa-circle"></i> LLM Evaluation, Guardrails and Cost Optimization</li>
                         <li><i class="fas fa-circle"></i> Speech AI Systems with production-grade TTS and STT</li>
                     </ul>
@@ -1664,10 +1941,13 @@
                     <div class="expertise-icon"><i class="fas fa-eye"></i></div>
                     <h3>Computer Vision and Gen AI</h3>
                     <ul class="expertise-list">
-                        <li><i class="fas fa-circle"></i> Fine-tuned Object Detection and Segmentation (Mask R-CNN, YOLO)</li>
-                        <li><i class="fas fa-circle"></i> Multimodal GenAI Video Generation (WAN 2.2), Image-to-Video, VLMs</li>
+                        <li><i class="fas fa-circle"></i> Fine-tuned Object Detection and Segmentation (Mask R-CNN,
+                            YOLO)</li>
+                        <li><i class="fas fa-circle"></i> Multimodal GenAI Video Generation (WAN 2.2), Image-to-Video,
+                            VLMs</li>
                         <li><i class="fas fa-circle"></i> KYC and Biometric Verification Systems</li>
-                        <li><i class="fas fa-circle"></i> Model Optimization with Nvidia AI Stack, Quantization, TensorRT</li>
+                        <li><i class="fas fa-circle"></i> Model Optimization with Nvidia AI Stack, Quantization,
+                            TensorRT</li>
                         <li><i class="fas fa-circle"></i> Real-time Tracking Systems</li>
                     </ul>
                 </article>
@@ -1678,7 +1958,8 @@
                     <ul class="expertise-list">
                         <li><i class="fas fa-circle"></i> MLOps and GPU-based Infrastructure (Nvidia AI Stack)</li>
                         <li><i class="fas fa-circle"></i> Cloud Native and Hybrid Platforms (AWS, Azure, OpenShift)</li>
-                        <li><i class="fas fa-circle"></i> Scalable Full-Stack AI Applications (FastAPI, Django, EKS)</li>
+                        <li><i class="fas fa-circle"></i> Scalable Full-Stack AI Applications (FastAPI, Django, EKS)
+                        </li>
                         <li><i class="fas fa-circle"></i> Event-Driven and Microservices Architectures</li>
                         <li><i class="fas fa-circle"></i> CI/CD, Infrastructure as Code (Terraform, AWS SAM)</li>
                     </ul>
@@ -1707,12 +1988,16 @@
                         <div class="project-meta">
                             <span class="project-tag">Healthcare AI</span>
                             <div class="project-links">
-                                <a href="https://github.com/MUsama41" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/MUsama41" target="_blank" title="GitHub Repository"><i
+                                        class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <h3>Billwell: Healthcare Billing Automation</h3>
                         <div class="project-description">
-                            <p class="line-clamp">Built a HIPAA-compliant AI platform to automate U.S. healthcare billing workflows. Developed intelligent pipelines to extract and validate data from medical bills, insurance claims, and EOBs, achieving 92% accuracy in automated reprocessing by interpreting denial codes and detecting discrepancies.</p>
+                            <p class="line-clamp">Built a HIPAA-compliant AI platform to automate U.S. healthcare
+                                billing workflows. Developed intelligent pipelines to extract and validate data from
+                                medical bills, insurance claims, and EOBs, achieving 92% accuracy in automated
+                                reprocessing by interpreting denial codes and detecting discrepancies.</p>
                             <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
                         </div>
                     </div>
@@ -1729,13 +2014,17 @@
                         <div class="project-meta">
                             <span class="project-tag">Computer Vision</span>
                             <div class="project-links">
-                                <a href="https://github.com/MUsama41/mask_RCNN_segmentation_finetunning" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
-                                <a href="https://www.verixpro.com/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MUsama41/mask_RCNN_segmentation_finetunning" target="_blank"
+                                    title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://www.verixpro.com/" target="_blank" title="Live Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <h3>Mask R-CNN Architectural Diagram Analysis</h3>
                         <div class="project-description">
-                            <p class="line-clamp">Fine-tuned segmentation model Mask R-CNN for real estate architectural diagrams, automating polygon extraction for fences/gardens, rockberms and 4 more object types and generating annotated planning PDFs with 95%+ precision.</p>
+                            <p class="line-clamp">Fine-tuned segmentation model Mask R-CNN for real estate architectural
+                                diagrams, automating polygon extraction for fences/gardens, rockberms and 4 more object
+                                types and generating annotated planning PDFs with 95%+ precision.</p>
                             <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
                         </div>
                     </div>
@@ -1744,18 +2033,22 @@
                 <!-- Project 3: WAN 2.2 -->
                 <article class="project-card scale-in" data-tilt>
                     <div class="project-visual">
-                        <iframe src="https://drive.google.com/file/d/1YC6TmYjOUbXtODLi7YtXdzqtmRRx8RmY/preview" allowfullscreen title="WAN 2.2 Avatar System Demo"></iframe>
+                        <iframe src="https://drive.google.com/file/d/1YC6TmYjOUbXtODLi7YtXdzqtmRRx8RmY/preview"
+                            allowfullscreen title="WAN 2.2 Avatar System Demo"></iframe>
                     </div>
                     <div class="project-content">
                         <div class="project-meta">
                             <span class="project-tag">Generative AI</span>
                             <div class="project-links">
-                                <a href="https://github.com/MUsama41" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/MUsama41" target="_blank" title="GitHub Repository"><i
+                                        class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <h3>WAN 2.2 Avatar System</h3>
                         <div class="project-description">
-                            <p class="line-clamp">Advanced video generation pipeline fine-tuned on a custom video dataset using WAN 2.2, achieving ultra-realistic lip-syncing and full body motion synthesis comparable to state-of-the-art platforms like HeyGen.</p>
+                            <p class="line-clamp">Advanced video generation pipeline fine-tuned on a custom video
+                                dataset using WAN 2.2, achieving ultra-realistic lip-syncing and full body motion
+                                synthesis comparable to state-of-the-art platforms like HeyGen.</p>
                             <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
                         </div>
                     </div>
@@ -1772,12 +2065,16 @@
                         <div class="project-meta">
                             <span class="project-tag">Multi-Agent AI</span>
                             <div class="project-links">
-                                <a href="https://www.areahub.ai/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://www.areahub.ai/" target="_blank" title="Live Demo"><i
+                                        class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <h3>Property Search Intelligence and Generative AI Lead</h3>
                         <div class="project-description">
-                            <p class="line-clamp">Led AreaHub&apos;s property search intelligence and generative AI systems, building a multi-agent, Lambda-based chatbot that converts buyer intent into optimized property queries and personalized recommendations. Also developed a fully automated AI video generation pipeline for sellers.</p>
+                            <p class="line-clamp">Led AreaHub&apos;s property search intelligence and generative AI
+                                systems, building a multi-agent, Lambda-based chatbot that converts buyer intent into
+                                optimized property queries and personalized recommendations. Also developed a fully
+                                automated AI video generation pipeline for sellers.</p>
                             <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
                         </div>
                     </div>
@@ -1794,12 +2091,15 @@
                         <div class="project-meta">
                             <span class="project-tag">Multi-Agent AI</span>
                             <div class="project-links">
-                                <a href="https://github.com/MUsama41/AI_Interview_feedback_agent" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/MUsama41/AI_Interview_feedback_agent" target="_blank"
+                                    title="GitHub Repository"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <h3>Interview Intelligence System</h3>
                         <div class="project-description">
-                            <p class="line-clamp">Automated the core recruitment in-house System for a large-scale firm, delivering high-speed interview feedback and data-driven hiring optimization through intelligent NLP pipelines.</p>
+                            <p class="line-clamp">Automated the core recruitment in-house System for a large-scale firm,
+                                delivering high-speed interview feedback and data-driven hiring optimization through
+                                intelligent NLP pipelines.</p>
                             <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
                         </div>
                     </div>
@@ -1816,12 +2116,14 @@
                         <div class="project-meta">
                             <span class="project-tag">Agents Modeling</span>
                             <div class="project-links">
-                                <a href="https://github.com/MUsama41/Multi_Agents_Modeling" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/MUsama41/Multi_Agents_Modeling" target="_blank"
+                                    title="GitHub Repository"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <h3>Multi Agents Modeling</h3>
                         <div class="project-description">
-                            <p class="line-clamp">A conversational ecosystem deployed on AWS EC2, utilizing LangGraph for complex multi-step reasoning and business logic automation.</p>
+                            <p class="line-clamp">A conversational ecosystem deployed on AWS EC2, utilizing LangGraph
+                                for complex multi-step reasoning and business logic automation.</p>
                             <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
                         </div>
                     </div>
@@ -1841,7 +2143,8 @@
             <div class="reviews-grid">
                 <article class="review-card fade-in-left">
                     <div class="quote-mark">&ldquo;</div>
-                    <p>Working with Usama has been a transformative experience. His ability to architect solutions from the &apos;jungle&apos; of data into true treasures is unmatched in the industry.</p>
+                    <p>Working with Usama has been a transformative experience. His ability to architect solutions from
+                        the &apos;jungle&apos; of data into true treasures is unmatched in the industry.</p>
                     <div class="reviewer">
                         <div class="reviewer-avatar">JM</div>
                         <div class="reviewer-info">
@@ -1853,7 +2156,8 @@
 
                 <article class="review-card fade-in-right">
                     <div class="quote-mark">&ldquo;</div>
-                    <p>Highly talented and detail-oriented. Muhammad consistently delivers production-grade AI solutions that exceed business requirements.</p>
+                    <p>Highly talented and detail-oriented. Muhammad consistently delivers production-grade AI solutions
+                        that exceed business requirements.</p>
                     <div class="reviewer">
                         <div class="reviewer-avatar">R</div>
                         <div class="reviewer-info">
@@ -1875,8 +2179,10 @@
                         <span class="section-label">Availability</span>
                         <h2 class="section-title">Let&apos;s Build Something Exceptional</h2>
                     </div>
-                    <p class="fade-in">Currently open to Senior AI/ML roles or high-impact technical collaborations. I bring expertise in LLMs, computer vision, and scalable AI infrastructure to drive measurable business outcomes.</p>
-                    
+                    <p class="fade-in">Currently open to Senior AI/ML roles or high-impact technical collaborations. I
+                        bring expertise in LLMs, computer vision, and scalable AI infrastructure to drive measurable
+                        business outcomes.</p>
+
                     <div class="contact-links">
                         <a href="mailto:gakhar.usama@gmail.com" class="contact-link fade-in">
                             <div class="link-icon"><i class="fas fa-envelope"></i></div>
@@ -1885,7 +2191,8 @@
                                 <strong>gakhar.usama@gmail.com</strong>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/in/muhammad-usama41/" target="_blank" class="contact-link fade-in">
+                        <a href="https://www.linkedin.com/in/muhammad-usama41/" target="_blank"
+                            class="contact-link fade-in">
                             <div class="link-icon"><i class="fab fa-linkedin-in"></i></div>
                             <div>
                                 <span>LinkedIn</span>
@@ -1904,7 +2211,8 @@
 
                 <div class="cta-card scale-in">
                     <h3>Schedule a Consultation</h3>
-                    <p>Ready to discuss how my AI expertise can accelerate your project? Book a 30-minute call to explore potential collaborations.</p>
+                    <p>Ready to discuss how my AI expertise can accelerate your project? Book a 30-minute call to
+                        explore potential collaborations.</p>
                     <a href="https://calendly.com/gakhar-usama/30min" class="btn btn-primary magnetic" target="_blank">
                         <i class="fas fa-calendar-check"></i> Book a Call
                     </a>
@@ -2020,7 +2328,7 @@
         document.addEventListener('mousemove', (e) => {
             mouse.x = e.clientX;
             mouse.y = e.clientY;
-            
+
             if (window.innerWidth > 768) {
                 cursorGlow.style.left = e.clientX + 'px';
                 cursorGlow.style.top = e.clientY + 'px';
@@ -2068,7 +2376,7 @@
                 const centerY = rect.height / 2;
                 const rotateX = (y - centerY) / 20;
                 const rotateY = (centerX - x) / 20;
-                
+
                 card.style.setProperty('--mouse-x', `${(x / rect.width) * 100}%`);
                 card.style.setProperty('--mouse-y', `${(y / rect.height) * 100}%`);
             });
@@ -2130,7 +2438,7 @@
                 if (entry.isIntersecting) {
                     setTimeout(() => {
                         entry.target.classList.add('visible');
-                        
+
                         // Trigger counter animation for stat numbers
                         const counters = entry.target.querySelectorAll('.stat-number[data-target]');
                         counters.forEach(counter => {
@@ -2198,14 +2506,37 @@
                 const centerY = rect.height / 2;
                 const rotateX = (y - centerY) / 15;
                 const rotateY = (centerX - x) / 15;
-                
+
                 profileCard.style.transform = `perspective(1000px) rotateX(${-rotateX}deg) rotateY(${-rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
             });
-            
+
             profileCard.addEventListener('mouseleave', () => {
                 profileCard.style.transform = '';
             });
         }
+
+        // ============================================
+        // Mobile Menu Toggle logic
+        // ============================================
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+        function toggleMobileMenu() {
+            mobileMenuBtn.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
 
         // Trigger initial animations for hero section
         document.querySelectorAll('.stat-number[data-target]').forEach(counter => {
@@ -2214,4 +2545,5 @@
         });
     </script>
 </body>
+
 </html>
